@@ -1,0 +1,6 @@
+<h1>Welcome to Yelp</h1>
+<ul class="list-group">
+    <% @restaurants.each do |restaurant| %>
+      <li><a href=/restaurants/:id><%= restaurant.name %></a></li>
+    <% end %>
+</ul>

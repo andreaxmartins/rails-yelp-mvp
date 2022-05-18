@@ -11,7 +11,8 @@ require 'faker'
   restaurant = Restaurant.new(
     name: Faker::Restaurant.name,
     address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
-    category: %w[chinese italian japanese french belgian].sample
+    phone_number: Faker::PhoneNumber.cell_phone,
+    category: %w[Chinese Italian Japanese French Belgian].sample
   )
   restaurant.save!
   puts 'New restaurant created successfully :)'
